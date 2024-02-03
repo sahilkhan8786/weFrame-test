@@ -15,8 +15,7 @@ const Sidebar = () => {
     }
     return (
         <>
-            <div className={`flex w-[15%] h-screen items-center pt-[100px] flex-col absolute left-0 bg-white max-[1200px]:w-[18%] max-[1080px]:w-[25%] 
-              z-10 max-[768px]: max-[768px]:w-[70%] max-[768px]:shadow-2xl max-[768px]:pl-[20px] ${urban.className} font-thin
+            <div className={`sidebar ${urban.className} 
               ${isActive ? 'max-[768px]:hidden' : 'max-[768px]:flex'}
               `} >
 

@@ -23,5 +23,5 @@ import left from './left.png'
 import right from './right.png'
 import ham from './ham.png'
 import close from './close.png'
-import back from './back.png'
+import back from './Back.png'
 export { search, avatar, dropDown, calender, dashboard, content, team, user, app_web, analytics, media, notification, setting, support, articles, ad, category, stories, eye, analyticsStory, down, left, right, ham, close, back }

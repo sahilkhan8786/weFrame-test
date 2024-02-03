@@ -27,7 +27,7 @@ const Navbar = () => {
 
     return (
 
-        <nav className={`w-5/6 h-[80px] flex items-center justify-between px-6 absolute right-0 max-[1080px]:w-[75%] max-[768px]:w-full shadow-lg ${urban.className} font-medium`}>
+        <nav className={`navbar ${urban.className} font-medium`}>
             {isActive ?
                 (<label className='cursor-pointer z-20 
                  hide ' onClick={() => setIsActive(prev => !prev)}>
