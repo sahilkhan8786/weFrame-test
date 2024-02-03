@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pointer {
+  @apply cursor-pointer
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+
+body {
+  @apply overflow-hidden
+}
+
+.wrapper-span {
+  @apply p-3 bg-heroBG text-articleText rounded-md
+}
+
+.details {
+  @apply flex items-center bg-white w-fit px-12 py-8 gap-4 rounded-xl cursor-pointer max-[1750px]:px-8 max-[1600px]:px-4 max-[1440px]:px-2 max-[1440px]:py-4
+}
+
+.calender {
+  @apply max-[1330px]:hidden
+}
+
+.hide {
+  @apply hidden max-[768px]:block
+}
+
+.postPage {
+  @apply overflow-y-scroll h-[82%] w-[85%] absolute top-[150px] left-[15%] px-6 max-[1080px]:left-[25%] max-[1080px]:w-[75%] max-[768px]:left-0 max-[768px]:w-full
+}
