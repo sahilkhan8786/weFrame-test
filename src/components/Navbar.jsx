@@ -1,5 +1,6 @@
 'use client'
 import React, { useContext, useEffect } from 'react'
+import Link from 'next/link'
 import ImageContainer from './helpers/ImageContainer'
 import { search, avatar, dropDown, calender, ham, close, back } from '../assets/icons'
 import { ToggleContext } from '@/app/context/ToggleContext'
@@ -43,10 +44,10 @@ const Navbar = () => {
                 <ImageContainer imageSRC={search} width={'24px'} height={'24px'} />
                 <input type="text" placeholder='Search' className={`bg-searchBG placeholder:${nunito.className}`} readOnly />
             </label> :
-                <label className='flex items-center gap-2 text-2xl cursor-pointer'>
+                <Link href='/' className='flex items-center gap-2 text-2xl cursor-pointer' prefetch >
                     <ImageContainer imageSRC={back} width={'30px'} height={'30px'} />
                     Stories
-                </label>
+                </Link>
             }
 
             <div className='flex gap-3 '>

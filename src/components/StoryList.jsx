@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import ImageContainer from './helpers/ImageContainer'
-import { story1 } from '@/assets/images'
 import { analyticsStory, eye } from '@/assets/icons'
 import ArticleButton from './ArticleButton'
 import Button from './Button'
@@ -35,7 +34,7 @@ const StoryList = () => {
                             <span className='text-articleText'>20 Sep 2022</span>
                             <ArticleButton text={el.buttonText} />
                         </div>
-                        <Link href={`/${el.type}`}>
+                        <Link href={`/${el.type}`} prefetch>
                             <Button text={'View'} />
                         </Link>
                     </div>
